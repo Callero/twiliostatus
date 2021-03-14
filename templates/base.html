@@ -1,0 +1,8 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - Delivery status</title>
+{% block body %}
+  <h1>Status of last message</h1>
+    {% for key, value in status_record.items() %}
+    <br>{{ key }} - {{ value }}
+    {% endfor %}
+{% endblock %}
